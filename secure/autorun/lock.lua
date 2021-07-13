@@ -62,8 +62,8 @@ local function buildLockScreen()
             UI.Page.eventHandler(self, event)
         end
     end
-
-    Event.onTerminate(function() return false end)
+    Event.onTerminate(function() UI.notification:error([[You cannot go to far.
+This is currently locked and cannot be terminated!]],  return false end)
 
     UI:setPage(page)
     UI:start()
