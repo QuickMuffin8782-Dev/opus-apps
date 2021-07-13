@@ -35,7 +35,7 @@ local function buildLockScreen()
             x = 10, ex = -10, y = "50%",
             limit = 32,
             mask = true,
-            shadowText = 'password',
+            shadowText = 'Password',
             accelerators = {
                 enter = 'password',
             },
